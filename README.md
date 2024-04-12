@@ -11,6 +11,13 @@
 [version-badge]: https://img.shields.io/npm/v/post-robot.svg?style=flat-square
 [package]: https://www.npmjs.com/package/post-robot
 
+# Yasoon Changes
+This is actually v10.0.46. But we have legacy bundled javascript files in DC, so we need postrobot to behave like 10.0.44.
+
+Always.
+
+
+# Other
 Cross domain post-messaging on the client side, using a simple listener/client pattern.
 
 Send a message to another window, and:
