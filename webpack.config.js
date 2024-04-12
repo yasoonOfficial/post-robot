@@ -16,7 +16,7 @@ export const MODULE_NAME = "postRobot";
 
 const postRobotGlobals = {
   ...globals.__POST_ROBOT__,
-  __GLOBAL_KEY__: `__post_robot_${getNextVersion(pkg, argv.level)}__`,
+  __GLOBAL_KEY__: `__post_robot_10_0_44__`,
 };
 
 export const WEBPACK_CONFIG: WebpackConfig = getWebpackConfig({
