@@ -1,6 +1,6 @@
 {
   "name": "@yasoonofficial/post-robot",
-  "version": "10.0.44",
+  "version": "10.0.45",
   "description": "Simple postMessage based server.",
   "main": "index.js",
   "scripts": {
@@ -17,11 +17,7 @@
     "build": "npm run test && npm run babel && npm run webpack -- $@",
     "clean": "rimraf dist coverage",
     "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
-    "debug": "cross-env NODE_ENV=debug",
-    "prepare": "husky install",
-    "prerelease": "npm run clean && npm run build && git add dist && git commit -m 'ci: check in dist folder' || echo 'Nothing to distribute'",
-    "release": "standard-version",
-    "postrelease": "git push && git push --follow-tags && npm publish"
+    "debug": "cross-env NODE_ENV=debug"
   },
   "standard-version": {
     "types": [
@@ -88,9 +84,11 @@
   ],
   "files": [
     "dist/",
+    "types/",
     "src/",
     "globals.js"
   ],
+  "types": "types/index.d.ts",
   "readmeFilename": "README.md",
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
